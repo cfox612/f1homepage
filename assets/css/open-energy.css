@@ -1,0 +1,274 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* base styles */
+/* base typography styles */
+/* line 3, ../../sass/partials/_typography.scss */
+h1 {
+  font-size: 48px;
+  font-weight: normal;
+}
+
+/* line 8, ../../sass/partials/_typography.scss */
+h2 {
+  font-size: 38px;
+  font-weight: normal;
+}
+
+/* line 13, ../../sass/partials/_typography.scss */
+h3 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+/* line 18, ../../sass/partials/_typography.scss */
+.primary {
+  color: #f6881f;
+}
+
+/* line 22, ../../sass/partials/_typography.scss */
+p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* navigation styles */
+/* line 3, ../../sass/partials/_nav.scss */
+.navbar-energy {
+  background-color: #ffffff;
+  border: none;
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+/* line 8, ../../sass/partials/_nav.scss */
+.navbar-energy .navbar-nav {
+  padding-top: 20px;
+  float: right;
+}
+/* line 12, ../../sass/partials/_nav.scss */
+.navbar-energy .navbar-nav > .active > a {
+  color: #6f7072;
+  background: transparent;
+  border-bottom-color: #f6881f;
+}
+/* line 16, ../../sass/partials/_nav.scss */
+.navbar-energy .navbar-nav > .active > a:hover {
+  background: transparent;
+}
+/* line 22, ../../sass/partials/_nav.scss */
+.navbar-energy .navbar-nav > .focus > a {
+  color: #6f7072;
+  background: transparent;
+  border-bottom-color: #f6881f;
+}
+/* line 28, ../../sass/partials/_nav.scss */
+.navbar-energy .navbar-nav a {
+  font-size: 18px;
+  margin-right: 5px;
+  border-bottom: 5px solid #ffffff;
+  color: #6f7072;
+}
+/* line 33, ../../sass/partials/_nav.scss */
+.navbar-energy .navbar-nav a:hover {
+  background: transparent;
+  border-bottom-color: #f6881f;
+}
+
+/* line 41, ../../sass/partials/_nav.scss */
+.logo img {
+  max-width: 70%;
+  padding-top: 35px;
+}
+
+/* header css */
+/* line 3, ../../sass/partials/_header.scss */
+.search-icon {
+  background: #f6881f;
+  color: #ffffff;
+  padding: 11px;
+}
+
+/* line 9, ../../sass/partials/_header.scss */
+.searchlink {
+  display: block;
+  float: right;
+  position: relative;
+  padding: 0px;
+  right: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* line 18, ../../sass/partials/_header.scss */
+.searchlink:hover, .searchlink.open {
+  color: #f6881f;
+}
+
+/* line 22, ../../sass/partials/_header.scss */
+.searchlink.open > .searchform {
+  display: block;
+}
+
+/* line 26, ../../sass/partials/_header.scss */
+.searchform {
+  display: none;
+  position: absolute;
+  width: 300px;
+  top: -12px;
+  right: -30px;
+  padding: 5px;
+  cursor: default;
+  background: #f6881f;
+  z-index: 6;
+}
+
+/* line 38, ../../sass/partials/_header.scss */
+.searchlink.open .searchform {
+  display: block;
+}
+
+/* line 42, ../../sass/partials/_header.scss */
+#search {
+  display: block;
+  position: relative;
+}
+
+/* line 47, ../../sass/partials/_header.scss */
+#s {
+  width: 270px;
+  padding: 5px;
+  border: 0;
+  color: #6f7072;
+}
+
+/* line 54, ../../sass/partials/_header.scss */
+.sbtn {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 3px;
+  background: none;
+  border: none;
+  color: #f6881f;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* footer styles */
+/* line 4, ../../sass/partials/_footer.scss */
+footer .top {
+  background: #f6881f;
+  color: #ffffff;
+  padding: 40px;
+}
+/* line 8, ../../sass/partials/_footer.scss */
+footer .top a {
+  color: #ffffff;
+}
+/* line 12, ../../sass/partials/_footer.scss */
+footer .bottom {
+  background: #fba919;
+  color: #ffffff;
+  padding: 10px;
+}
+/* line 17, ../../sass/partials/_footer.scss */
+footer .footer-logo {
+  max-width: 40%;
+}
+
+/* page styles */
+/* line 3, ../../sass/partials/_page.scss */
+body {
+  font-family: "Lato";
+}
+
+/* line 11, ../../sass/partials/_page.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 16, ../../sass/partials/_page.scss */
+.gray-icons {
+  margin: 40px 0;
+  text-align: center;
+  color: #6f7072;
+  font-size: 20px;
+}
+/* line 21, ../../sass/partials/_page.scss */
+.gray-icons .fa {
+  font-size: 120px;
+  margin-bottom: 20px;
+  color: #c9c9c9;
+}
+
+/* line 29, ../../sass/partials/_page.scss */
+section.homepage {
+  padding: 40px 0;
+}

@@ -1,0 +1,181 @@
+/* page styles */
+
+body {
+	font-family: Helvetica;
+}
+
+nav {
+	
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.bluebg {
+	background: $gray-lighter;
+	padding: 40px auto;
+}
+
+.card {
+	max-width: 30%;
+	padding: 20px;
+	background: $white;
+	margin: 20px 1.5%;
+	border-radius: 5px;
+	float: left;
+	position: relative;
+	-webkit-box-shadow:0px 1px 1px $gray-light;
+	 -moz-box-shadow:0px 1px 1px $gray-light;
+	 box-shadow:0px 1px 1px $gray-light;
+	.card-image {
+		position: relative;
+		height: 167px;
+		overflow: hidden;
+		&:hover {
+			.image-hover {
+		    opacity: .95;
+		    @include fade-in-out(.3s);
+			}
+		}
+	}
+	.image-hover {
+		position: absolute;
+    top: 0;
+    background: $white;
+    height: 100%;
+    padding: 20px;
+    opacity: 0;
+    line-height: 24px;
+    @include fade-in-out(.3s);
+    a {
+    	color: $black;
+    	cursor: pointer;
+    }
+	}
+	.card-tags {
+		position: relative;
+    margin-bottom: 10px;
+    margin-top: 20px;
+		.tag {
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			float: left;
+			margin-right: 20px;
+			a {
+				cursor: pointer;
+				color: $secondary;
+				padding: 5px 7px;
+				font-size: 12px;
+				border: 1px solid $secondary;
+				border-radius: 3px;
+				&:hover {
+					color: $white;
+					background: $secondary;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.card-title {
+		clear: both;
+		position: relative;
+		margin-bottom: 30px;
+		height: 90px;
+		overflow: hidden;
+		h2 {
+			font-size: 22px;
+			font-weight: lighter;
+			line-height: 30px;
+			a {
+				color: $primary;
+			}
+		}
+	}
+	.author-date {
+		color: $gray;
+		font-size: 12px;
+		.author {
+			float: left;
+			margin-right: 20px;
+			a {
+				color: $secondary;
+				&:hover {
+					color: $secondary;
+				}
+			}
+		}
+		.date {
+			float: right;
+		}
+	}
+}
+.clearfix {
+	clear: both;
+}
+
+.blog-categories {
+	padding: 40px 0;
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			width: 24%;
+	    margin: 0;
+	    padding: 20px;
+	    overflow: hidden;
+			a {
+				color: $gray;
+				text-align: center;
+				text-transform: uppercase;
+				line-height: 22px;
+				.image-top {
+					background: $secondary;
+					padding: 20px;
+					margin-bottom: 20px;
+					img {
+						width: 70%;
+						transition: all .2s ease-in-out;
+						&:hover {
+							transform: scale(1.2); 
+						}
+					}
+				}
+				&:hover {
+					color: $secondary;
+					text-decoration: none;
+				}
+				.text-category {
+					height: 42px;
+				}
+			}
+		}
+	}
+}
+
+.blog-tags {
+	text-align: center;
+	padding: 40px 0;
+	ul {
+		li {
+			display: inline-block;
+			margin: 10px;
+			a {
+				display: block;
+				background: $gray-lighter;
+				border: 1px solid $gray-light;
+				color: $primary;
+				padding: 10px;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 12px;
+				&:hover {
+					background: $primary;
+					color: $white;
+				}
+			}
+		}
+	}
+}

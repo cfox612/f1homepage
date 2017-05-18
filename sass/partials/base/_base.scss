@@ -1,0 +1,16 @@
+/* base styles */
+
+$white: 				#ffffff;
+$black: 				#000000;
+$primary: 			#E73E2E;	/* red */
+$secondary:			#151c26; 	/* dark blue */
+$gray-light:		#d5d5d5;
+$gray-lighter:	#f5f5f5;
+$gray:					#999999;
+
+@mixin fade-in-out($time) {
+  transition: opacity $time ease-in-out;
+  -moz-transition: opacity $time ease-in-out;
+  -webkit-transition: opacity $time ease-in-out;
+  -o-transition: opacity $time ease-in-out;
+}
